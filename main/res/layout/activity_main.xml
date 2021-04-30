@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:src="@drawable/dex" />
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:fontFamily="sans-serif-black"
+        android:paddingTop="25dp"
+        android:text="Manage Employee Information"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:gravity="center_horizontal" />
+
+    <EditText
+        android:id="@+id/number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:width= "50dp"
+        android:hint="Enter Employee ID *Required*"
+        android:textAlignment="center"
+        android:inputType= "number"
+        android:gravity="center_horizontal"></EditText>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:width= "50dp"
+        android:hint="Enter Employee name"
+        android:textAlignment="center"
+        android:gravity="center_horizontal"></EditText>
+
+    <EditText
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:width= "50dp"
+        android:hint="Enter Employee location"
+        android:textAlignment="center"
+        android:gravity="center_horizontal">
+        ></EditText>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="80dp"
+        android:layout_width="match_parent"
+        android:paddingTop="30dp">
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="Add"
+        android:layout_marginLeft="60dp"
+        android:backgroundTint="@color/material_on_surface_emphasis_medium"/>
+
+        <Button
+            android:id="@+id/btn_view"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/material_on_surface_emphasis_medium"
+            android:text="View" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="376dp"
+        android:layout_height="180dp"
+        android:orientation="horizontal"
+        android:paddingTop="30dp">
+
+        <Button
+            android:id="@+id/btn_edit"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:backgroundTint="@color/material_on_surface_emphasis_medium"
+            android:text="Edit" />"
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="103dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:backgroundTint="@color/material_on_surface_emphasis_medium"
+            android:text="Delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="100dp"
+        android:layout_width="match_parent"
+        android:paddingTop="1dp">
+
+        <Button
+            android:id="@+id/btn_viewAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/material_on_surface_emphasis_medium"
+            android:text="View All" />
+
+    </LinearLayout>
+
+</LinearLayout>
